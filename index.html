@@ -23,7 +23,9 @@
 
       <div id="banner">
         <span id="logo"></span>
-
+{% for repository in site.github.public_repositories %}
+  * [{{ repository.name }}]({{ repository.html_url }})
+{% endfor %}
         <a href="https://github.com/raulnavascues" class="button fork"><strong>View On GitHub</strong></a>
       </div><!-- end banner -->
 
